@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PACKAGE_NAME="H2O_Sparklingwater"
-PACKAGE_VERSION="3.28.0.3-1-2.4"
+PACKAGE_VERSION="3.32.0.4-1-2.3"
 BUILD_DIR=${BUILD_DIR:-./build}
 DOWNLOAD_URL="https://s3.amazonaws.com/h2o-release/sparkling-water/spark-2.4/3.28.0.3-1-2.4/sparkling-water-3.28.0.3-1-2.4.zip"
 
