@@ -4,9 +4,9 @@
 Project to integrate H2O Sparkling Water as a notebook in IBM Spectrum Conductor.
 
 ### Using:
-Download [H2O Sparkling Water](https://s3.amazonaws.com/h2o-release/sparkling-water/spark-2.4/3.32.0.4-1-2.3/sparkling-water-3.32.0.4-1-2.3.zip) and place it in the package folder. In the scripts/common.inc file update the version from 3.32.0.4-1-2.3 to the version you are using if it is different. Then run the build_package.sh script to build the package.
+Download [H2O Sparkling Water](https://s3.amazonaws.com/h2o-release/sparkling-water/spark-2.4/3.32.0.4-1-2.4/sparkling-water-3.32.0.4-1-2.4.zip) and place it in the package folder. In the scripts/common.inc file update the version from 3.32.0.4-1-2.4 to the version you are using if it is different. Then run the build_package.sh script to build the package.
 
-Then you can add this package (example: H2O_Sparklingwater-3.32.0.4-1-2.3.tar.gz) to your Conductor cluster through the "Add" button on "Workload" / "Spark" / "Notebook Management" page.
+Then you can add this package (example: H2O_Sparklingwater-3.32.0.4-1-2.4.tar.gz) to your Conductor cluster through the "Add" button on "Workload" / "Spark" / "Notebook Management" page.
 Parameters you have to define:
 - Name
 - Version (typically the version of H2O Sparkling Water, example 3.32.0.4)
@@ -21,8 +21,8 @@ Then you can add it to an existing Spark Instance Group (you need to stop it the
  
 In the Spark instance group configuration you need to set:
 - SPARK_EGO_ENABLE_PREEMPTION=false
-- SPARK_EGO_FREE_SLOTS_IDLE_TIMEOUT=3000
 - SPARK_EGO_EXECUTOR_IDLE_TIMEOUT=3000
+- SPARK_EGO_FREE_SLOTS_IDLE_TIMEOUT=3000
 - SPARK_EXECUTOR_MEMORY=8g
 - JAVA_HOME to the location of Open JDK, example /usr
 
